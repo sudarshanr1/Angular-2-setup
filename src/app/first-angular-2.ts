@@ -1,12 +1,14 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
+import {CoursesComponent} from './courses.components';
 
 
 @Component({
   selector: 'first-angular-2-app',
   providers: [],
   templateUrl: 'app/first-angular-2.html',
-  directives: [ROUTER_DIRECTIVES],
+  template:'<courses></courses>',
+  directives: [CoursesComponent],
   pipes: []
 })
 @RouteConfig([
